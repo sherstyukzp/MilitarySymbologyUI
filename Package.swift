@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "MilitarySymbologyUI",
     defaultLocalization: "en",
-    platforms: [.iOS(.v17), .macOS(.v14)],
+    platforms: [.iOS(.v16), .macOS(.v14)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -14,7 +14,7 @@ let package = Package(
             targets: ["MilitarySymbologyUI"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/sergpryimachuk/militarysymbologykit", branch: "main")
+        .package(url: "https://github.com/sherstyukzp/MilitarySymbologyKit", branch: "main")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
