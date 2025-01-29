@@ -44,18 +44,19 @@ public struct MilitarySymbolSearchResults: View {
             }
         case .noResults:
             let comment: StaticString = "Symbol search"
-            ContentUnavailableView(label: {
-                Label(
-                    title: {
-                        Text("Not found", bundle: .militarySymbologyKit, comment: comment)
-                    },
-                    icon: {
-                        Image(systemName: "questionmark.diamond")
-                    }
-                )
-            }, description: {
-                Text("No results for '\(searchText)'", bundle: .militarySymbologyKit, comment: comment)
-            })
+//            ContentUnavailableView(label: {
+//                Label(
+//                    title: {
+//                        Text("Not found", bundle: .militarySymbologyKit, comment: comment)
+//                    },
+//                    icon: {
+//                        Image(systemName: "questionmark.diamond")
+//                    }
+//                )
+//            }, description: {
+//                Text("No results for '\(searchText)'", bundle: .militarySymbologyKit, comment: comment)
+//            })
+            Text("No results)
         case .showResults:
             MilitarySymbolForEach(for: searchResults) { selectedSymbol in
                 self.selectedSymbol = selectedSymbol
